@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.gluonhq.charm.glisten.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.SplitMenuButton?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="462.0" prefWidth="717.0" style="-fx-background-color: e9e9e9;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gestioncommerciale.InscriptionController">
+   <children>
+      <AnchorPane layoutX="73.0" layoutY="113.0" />
+      <Pane layoutX="27.0" layoutY="-119.0" prefHeight="549.0" prefWidth="763.0" style="-fx-background-color: e9e9e9;">
+         <children>
+            <Button fx:id="btnEnregistrement" disable="true" layoutX="285.0" layoutY="437.0" mnemonicParsing="false" style="-fx-background-color: #2196f3;" text="Enregistrer" />
+            <Text fill="#2196f3" fontSmoothingType="LCD" layoutX="180.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font: #2196f3;" text="Enregistrement User" textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <ImageView fitHeight="75.0" fitWidth="99.0" layoutX="62.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Photoshop/voiture.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="148.0" layoutX="28.0" layoutY="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Photoshop/Sans%20titre-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="148.0" layoutX="28.0" layoutY="274.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Photoshop/Sans%20titre-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="148.0" layoutX="28.0" layoutY="325.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Photoshop/Sans%20titre-1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="48.0" fitWidth="148.0" layoutX="30.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Photoshop/Mdp.png" />
+               </image>
+            </ImageView>
+            <TableView layoutX="467.0" layoutY="198.0" prefHeight="299.0" prefWidth="253.0" />
+            <Text fill="#2196f3" fontSmoothingType="LCD" layoutX="534.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font: #2196f3;" text="Liste des users " textAlignment="CENTER">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Text>
+            <PasswordField fx:id="txtPwdsss" layoutX="101.0" layoutY="244.0" prefHeight="25.0" prefWidth="284.0" promptText="Entrer le mot de passe" />
+            <TextField fx:id="txtLogin" layoutX="101.0" layoutY="204.0" prefHeight="25.0" prefWidth="284.0" promptText="Entrer le login" />
+            <TextField fx:id="txtNom" layoutX="101.0" layoutY="286.0" prefHeight="25.0" prefWidth="284.0" promptText="Entrer le nom" />
+            <TextField fx:id="txtPrenom" layoutX="101.0" layoutY="337.0" prefHeight="25.0" prefWidth="284.0" promptText="Entrer le prénom" />
+            <Button cancelButton="true" layoutX="737.0" layoutY="120.0" mnemonicParsing="false" text="X" />
+            <SplitMenuButton layoutX="101.0" layoutY="389.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="284.0" text="Sélectionner un profil">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+                <MenuItem mnemonicParsing="false" text="Action 2" />
+              </items>
+            </SplitMenuButton>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
